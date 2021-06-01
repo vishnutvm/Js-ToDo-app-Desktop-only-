@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1 class="todo-container-title">Stuff I need to do</h1>
+
+
+      <!-- left side -->
+      <div class="task-section">
+        <h2 class="task-title">My lists</h2>
+        <ul class="task-list">
+          <li class="task-name active">Youtube</li>
+          <li class="task-name">Work</li>
+          <li class="task-name">Grocery</li>
+       
+        </ul>
+        <form action="" class="list-input-form">
+          <input type="text" class="list-input" placeholder="New list name" />
+          <button class="list-add-btn btn">+</button>
+        </form>
+      </div>
+
+
+      <!-- right side -->
+      <div class="todo-section">
+        <div class="todo-heading">
+          <h2 class="todo-title">YouTube</h2>
+          <p class="remaining-count">3 tasks remaining</p>
+        </div>
+        <div class="todo-body">
+          <div class="tasks">
+            <div class="task">
+              <input type="checkbox" id="task-1" />
+              <label for="task-1"
+                ><span class="custom-checkbox"></span>record todo list
+                video</label
+              >
+            </div>
+
+            <div class="task">
+              <input type="checkbox" id="task-2" />
+              <label for="task-2"
+                ><span class="custom-checkbox"></span>another task</label
+              >
+            </div>
+
+            <div class="task">
+              <input type="checkbox" id="task-3" />
+              <label for="task-3"
+                ><span class="custom-checkbox"></span>a third task</label
+              >
+            </div>
+            <form action="">
+              <input
+                type="text"
+                class="task-input"
+                placeholder="new task name"
+              />
+              <button class=" btn task-add-btn">+</>
+            </form>
+          </div>
+
+
+        </div>
+        <div class="delet-stuf">
+            <a href="#" class=" btn btn-clear">Clear completed task</a>
+            <a href="#" class="btn btn-delete">Delet list</a>
+        </div>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
