@@ -15,15 +15,13 @@
     <div class="todo-container">
       <h1 class="todo-container-title">Stuff I need to do</h1>
 
-
       <!-- left side -->
       <div class="task-section">
         <h2 class="task-title">My lists</h2>
         <ul class="task-list">
-          <li class="task-name active">Youtube</li>
+          <!-- <li class="task-name active">Youtube</li>
           <li class="task-name">Work</li>
-          <li class="task-name">Grocery</li>
-       
+          <li class="task-name">Grocery</li> -->
         </ul>
         <form action="" class="list-input-form">
           <input type="text" class="list-input" placeholder="New list name" />
@@ -31,16 +29,15 @@
         </form>
       </div>
 
-
       <!-- right side -->
-      <div class="todo-section">
+      <div class="todo-section" data-list-display-container>
         <div class="todo-heading">
-          <h2 class="todo-title">YouTube</h2>
-          <p class="remaining-count">3 tasks remaining</p>
+          <h2 class="todo-title" data-list-heading>YouTube</h2>
+          <p class="remaining-count" data-list-counter>3 tasks remaining</p>
         </div>
         <div class="todo-body">
-          <div class="tasks">
-            <div class="task">
+          <div class="tasks" data-tasks>
+            <!-- <div class="task">
               <input type="checkbox" id="task-1" />
               <label for="task-1"
                 ><span class="custom-checkbox"></span>record todo list
@@ -60,26 +57,27 @@
               <label for="task-3"
                 ><span class="custom-checkbox"></span>a third task</label
               >
-            </div>
-            <form action="">
-              <input
-                type="text"
-                class="task-input"
-                placeholder="new task name"
-              />
-              <button class=" btn task-add-btn">+</>
-            </form>
+            </div> -->
           </div>
-
-
+          <form action="" data-task-form>
+            <input data-task-input type="text" placeholder="new task name" />
+            <button class="btn task-add-btn">+</button>
+          </form>
         </div>
         <div class="delet-stuf">
-            <a href="#" class=" btn btn-clear">Clear completed task</a>
-            <a href="#" class="btn btn-delete">Delet list</a>
+          <a href="#" class="btn btn-clear" data-clear-compleeted-task-button>Clear completed task</a>
+          <a href="#" class="btn btn-delete">Delet list</a>
         </div>
-        </div>
-
+      </div>
     </div>
+    <!-- setting template for sub task -->
+
+    <template id="task-tamplats">
+      <div class="task">
+        <input type="checkbox" />
+        <label><span class="custom-checkbox"></span></label>
+      </div>
+    </template>
 
     <script defer src="script.js"></script>
   </body>

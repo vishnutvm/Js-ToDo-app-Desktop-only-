@@ -25,6 +25,7 @@ body{
     grid: "heading heading heading heading" auto
           "....... task    todo    ......."auto/
          1fr 300px 500px 1fr; 
+         
 
          &-title{
             grid-area: heading;
