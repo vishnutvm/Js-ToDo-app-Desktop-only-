@@ -104,6 +104,7 @@ body{
        
         // right section
         .todo-section{
+            align-self:start;
             position: relative;
             grid-area: todo;
             color: var(--dark-col);

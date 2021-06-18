@@ -129,6 +129,9 @@ body .todo-container .task-section form input:focus {
 }
 
 body .todo-container .todo-section {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   position: relative;
   grid-area: todo;
   color: var(--dark-col);
